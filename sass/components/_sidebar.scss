@@ -1,0 +1,25 @@
+.sidebar-widget {
+	max-width: 80rem;
+	width: 100%;
+	&:not(:first-child) {
+		margin-top: 4rem;
+	}
+
+	&__heading {
+		font-family: $font-montserrat;
+		color: $color-grey-light-1;
+		font-size: 2.5rem;
+		font-weight: 500;
+        position: relative;
+        margin-bottom: 5rem;
+
+		&::after {
+			content: '';
+			border: 1px solid #ef5e5e;
+			width: 45px;
+			position: absolute;
+			left: 0;
+			bottom: -15px;
+		}
+	}
+}

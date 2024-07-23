@@ -1,0 +1,52 @@
+.search {
+    padding: 2rem;
+
+    &__button {
+        background-color: $color-white;
+        border: none;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        
+
+        &--inside-input {
+            position: absolute;
+            top: 4.4rem;
+            left: 3rem;
+            fill: $color-grey-dark-3;
+        }
+
+        &--header {
+            fill: $color-white;
+        }
+    }
+
+    &__result {
+        padding-top: 2rem;
+    }
+
+    &__group-title {
+        margin-left: .2rem;
+        font-size: 2.3rem;
+        font-family: $font-body;
+    }
+
+    &__item-list {
+        padding-top: 1rem;
+    }
+
+    &__item {
+        list-style: none;
+        font-size: 1.8rem;
+        padding: 2rem 3rem;
+        margin-left: -2rem;
+        
+
+        &:hover {
+            background-color: $color-grey-dark-1;
+            cursor: pointer;
+        }
+    }
+}

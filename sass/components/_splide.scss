@@ -1,0 +1,39 @@
+.splide {
+	width: 100%;
+	
+	&__list{
+		transform: translateX(0);
+	}
+
+	&__artist &__slide {
+		
+		& img {
+			height: 33rem;
+			border-radius: 2rem;
+		}
+	}
+
+	&__gallery &__slide {
+		// transform: translateX(120px);
+		& img {
+			height: 40rem;
+			border-radius: 2rem;
+			cursor: pointer;
+		}
+	}
+
+	&__blog &__slide {
+		& img {
+			height: 33rem;
+			border-radius: 2rem;
+			cursor: pointer;
+		}
+	}
+
+	&__review &__slide {
+		& img {
+			// height: 33rem;
+			border-radius: 2rem;
+		}
+	}
+}

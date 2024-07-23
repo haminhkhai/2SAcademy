@@ -1,0 +1,90 @@
+.heading-primary {
+    font-family: $font-heading;
+    color: $color-grey-light-1;
+    font-size: 6.4rem;
+    font-weight: 500;
+
+    &--dark {
+        color: $color-grey-dark-4
+    }
+}
+
+.heading-secondary {
+    font-family: $font-heading;
+    color: $color-grey-light-1;
+    font-size: 4.8rem;
+    font-weight: 500;
+
+    &--dark {
+        color: $color-grey-dark-4
+    }
+
+    & a,
+	& a:visited {
+		text-decoration: none;
+        color: inherit;
+	}
+
+    @include respond (phone) {
+        font-size: 3.5rem;
+    }
+}
+
+.heading-tertiary {
+    font-family: $font-heading;
+    color: $color-grey-light-1;
+    font-size: 3.6rem;
+    font-weight: 400;
+
+    &--dark {
+        color: $color-grey-dark-4
+    }
+}
+
+.heading-excerpt {
+    font-family: $font-body;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $color-grey-light-1;
+    
+    @include respond(phone-large) {
+        font-size: 1.8rem;
+    }
+
+    &--dark {
+        color: $color-grey-dark-4
+    }
+
+    &--teal {
+        color: #00b5ad;
+    }
+}
+
+.heading-segment {
+    font-family: $font-body;
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-grey-light-1;
+
+    &--dark {
+        color: $color-grey-dark-4
+    }
+
+    &--teal {
+        color: #00b5ad;
+    }
+}
+
+.heading-small {
+    font-family: $font-montserrat;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.yarl__slide_description {
+    font-size: 2rem;
+    // padding: 4rem;
+}

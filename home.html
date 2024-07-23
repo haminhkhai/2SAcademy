@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chonburi&family=
+			Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto
+			:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900
+			&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide-core.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="img/logo.svg" />
+		<title>2S ACADEMY</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="header-two-column flex">
+				<div class="header-column-left flex">
+					<a class="logo-wrapper" href="index.html">
+						<img src="img/logo.svg" alt="logo" class="logo" />
+						<img src="img/logo-text.svg" alt="logo" class="logo-text" />
+					</a>
+				</div>
+				<div class="header-column-right flex">
+					<nav class="nav-wrap flex">
+						<ul class="nav nav--right-side">
+							<li class="nav__item">
+								<svg id="searchBtn" class="nav__icon">
+									<use href="img/sprite.svg#icon-search"></use>
+								</svg>
+							</li>
+							<li class="nav__item">
+								<div class="item-wrap flex">
+									<span>English</span>
+									<svg class="nav__icon">
+										<use href="img/sprite.svg#icon-arrow-down"></use>
+									</svg>
+								</div>
+							</li>
+							<li class="nav__item">
+								<svg class="nav__icon">
+									<use href="img/sprite.svg#icon-menu"></use>
+								</svg>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="section-about">
+				<div class="about__text-box">
+					<h1 class="heading-primary u-margin-bottom-small">Welcome To<br />2S Academy</h1>
+					<span class="heading-excerpt u-margin-bottom-medium">
+						A high-quality DJ & Producer academy focused on<br />
+						both online and offline sessions and traineeships.<br />
+						Launch your career and showcase your talent.
+					</span>
+					<a href="#popup" onclick="openPopup('popup')" class="btn btn--red btn--animated"
+						>Đăng ký ngay</a
+					>
+					<a href="#" class="btn btn--transparent-white u-margin-left-small">
+						Tìm hiểu thêm
+						<svg>
+							<use href="img/sprite.svg#icon-button-arrow" />
+						</svg>
+					</a>
+				</div>
+			</section>
+
+			<section class="section-courses">
+				<h2 class="heading-secondary u-align-center u-margin-bottom-medium">
+					What’s Included In <br />
+					A Subscription?
+				</h2>
+				<div class="container">
+					<div class="three-cols-row">
+						<div class="course-card">
+							<img class="course-card__thumb" src="img/courses/course1.png" alt="course" />
+							<div class="course-card__content">
+								<h1 class="course-card__heading">Beginner Level Courses</h1>
+								<p class="course-card__excerpt">
+									Make music a big part of your life in our growing community.
+								</p>
+								<a href="#" class="btn btn--transparent-grey btn--animated float-right">
+									<svg>
+										<use href="img/sprite.svg#icon-button-arrow" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="course-card">
+							<img class="course-card__thumb" src="img/courses/course1.png" alt="course" />
+							<div class="course-card__content">
+								<h1 class="course-card__heading">Beginner Level Courses</h1>
+								<p class="course-card__excerpt">
+									Make music a big part of your life in our growing community.
+								</p>
+								<a href="#" class="btn btn--transparent-grey btn--animated float-right">
+									<svg>
+										<use href="img/sprite.svg#icon-button-arrow" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="course-card">
+							<img class="course-card__thumb" src="img/courses/course1.png" alt="course" />
+							<div class="course-card__content">
+								<h1 class="course-card__heading">Beginner Level Courses</h1>
+								<p class="course-card__excerpt">
+									Make music a big part of your life in our growing community.
+								</p>
+								<a href="#" class="btn btn--transparent-grey btn--animated float-right">
+									<svg>
+										<use href="img/sprite.svg#icon-button-arrow" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn--red btn--animated u-align-center u-margin-top-small"
+						>Đăng ký ngay</a
+					>
+				</div>
+			</section>
+
+			<section class="section-teachers">
+				<div class="teachers">
+					<h1 class="teachers__title heading-secondary">
+						Learn From<br />Industry Experts<br />And 2S Academy<br />Artists
+					</h1>
+					<div class="teachers__img-wrapper">
+						<section class="splide splide--teachers" id="splide-teachers">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="img/teachers/feliz.png" alt="feliz" class="teachers__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/teachers/feliz2.png" alt="feliz" class="teachers__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/teachers/feliz.png" alt="feliz" class="teachers__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/teachers/feliz2.png" alt="feliz" class="teachers__img" />
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-gallery">
+				<div class="gallery">
+					<div class="gallery__header">
+						<h3 class="heading-tertiary">Gallery</h3>
+						<a href="#" class="btn btn--transparent-grey">
+							More
+							<svg>
+								<use href="img/sprite.svg#icon-button-arrow" />
+							</svg>
+						</a>
+					</div>
+					<div class="gallery__img-wrapper">
+						<section class="splide splide--gallery" id="splide-gallery">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="img/gallery/gallery1.png" alt="gallery" class="gallery__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/gallery/gallery2.png" alt="gallery2" class="gallery__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/gallery/gallery1.png" alt="gallery2" class="gallery__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/gallery/gallery2.png" alt="gallery" class="gallery__img" />
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-blog">
+				<div class="blog">
+					<div class="blog__header">
+						<h3 class="heading-tertiary">Blog</h3>
+						<a href="#" class="btn btn--transparent-grey">
+							More
+							<svg>
+								<use href="img/sprite.svg#icon-button-arrow" />
+							</svg>
+						</a>
+					</div>
+					<div class="blog__img-wrapper">
+						<section class="splide splide--blog" id="splide-blog">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="img/blog/blog1.png" alt="blog" class="blog__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/blog/blog2.png" alt="blog" class="blog__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/blog/blog3.png" alt="blog" class="blog__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/blog/blog4.png" alt="blog" class="blog__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/blog/blog1.png" alt="blog" class="blog__img" />
+									</li>
+									<li class="splide__slide">
+										<img src="img/blog/blog2.png" alt="blog" class="blog__img" />
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="chat-button">
+			<a href="#"> Chat with us </a>
+		</div>
+
+		<footer class="footer">
+			<a class="logo-wrapper" href="index.html">
+				<img src="img/logo.svg" alt="logo" class="logo" />
+				<img src="img/logo-text.svg" alt="logo" class="logo-text" />
+			</a>
+			<ul class="footer__address-list">
+				<li>
+					215/6 Huỳnh Văn Bánh, Phường 12, Phú Nhuận,<br />Thành phố Hồ Chí Minh, Phú Nhuận, Vietnam
+				</li>
+				<li>091 153 35 22</li>
+				<li>academy@2smusic.com</li>
+			</ul>
+			<ul class="footer__terms">
+				<li>Hỗ trợ khách hàng</li>
+				<li>Chính sách bảo hành</li>
+				<li>Chính sách bảo mật thông tin cá nhân</li>
+				<li>Chính sách đổi trả, hoàn tiền</li>
+				<li>Chính sách bảo hành</li>
+				<li>Điều khoản, quy chế hoạt động website</li>
+			</ul>
+			<div class="social-wrapper flex">
+				<div class="social-item">
+					<svg class="social-item__icon">
+						<use href="img/sprite.svg#icon-insta"></use>
+					</svg>
+				</div>
+				<div class="social-item">
+					<svg class="social-item__icon">
+						<use href="img/sprite.svg#icon-facebook"></use>
+					</svg>
+				</div>
+				<div class="social-item">
+					<svg class="social-item__icon">
+						<use href="img/sprite.svg#icon-twitter"></use>
+					</svg>
+				</div>
+				<div class="social-item">
+					<svg class="social-item__icon">
+						<use href="img/sprite.svg#icon-youtube"></use>
+					</svg>
+				</div>
+			</div>
+		</footer>
+		<div class="popup popup" id="popup">
+			<div class="popup__content popup__content--register">
+				<div class="register">
+					<span class="popup__btn-close" onclick="closePopup('popup')">&times;</span>
+					<h2
+						class="heading-secondary heading-secondary--dark u-align-center u-margin-bottom-small">
+						Register
+					</h2>
+					<p class="heading-excerpt heading-excerpt--dark">
+						Type in your name and choose your country, as well as the email address you will use to
+						receive your login details. Choose a strong password to log in to the platform.
+					</p>
+					<form class="form">
+						<div class="register__form">
+							<input type="text" class="form__input" placeholder="Họ và tên (*)" />
+							<div class="form__group-half">
+								<input type="email" class="form__input form__input" placeholder="Email (*)" />
+								<input
+									type="text"
+									class="form__input form__input"
+									placeholder="Số điện thoại (*)" />
+							</div>
+							<select class="form__select">
+								<option value="" disabled selected>Khóa học bạn dự định tham gia</option>
+								<option>Beginner Course</option>
+								<option>Intermediate Course</option>
+								<option>Advance Course</option>
+							</select>
+							<textarea
+								rows="3"
+								class="form__input form__input--textarea"
+								placeholder="Ghi chú"></textarea>
+							<button type="submit" class="btn btn--red btn--animated">Đăng ký ngay</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

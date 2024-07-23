@@ -1,0 +1,73 @@
+.card {
+	position: relative;
+	background-color: $color-grey-light-2;
+	border-radius: 0.7rem;
+	border-bottom: 3px solid $color-blue-light;
+	transition: all 0.2s;
+	display: flex;
+	flex-direction: column;
+	min-height: 480px;
+	// justify-content: space-between;
+
+	&--admin {
+		border: 1px solid $color-grey-dark-3;
+	}
+
+	&__picture-wrapper img {
+		width: 100%;
+		height: 30rem;
+		object-fit: cover;
+		border-top-left-radius: 0.7rem;
+		border-top-right-radius: 0.7rem;
+	}
+
+	&__detail {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		flex: 1;
+	}
+
+	&__heading {
+		text-align: center;
+		color: $color-grey-dark-3;
+
+		&--course {
+			font-size: 3rem;
+			padding: 2rem 1rem;
+		}
+	}
+
+	&__price {
+		color:$color-blue-light;
+		font-family: $font-montserrat;
+		font-weight: 500;
+		// margin-bottom: 1rem;
+		font-size: 2.3rem;
+		text-align: center;
+	}
+
+	&__description {
+		padding: 0rem 1.5rem 1.5rem 1.5rem;
+		font-size: 1.8rem;
+		color: $color-grey-dark-3;
+		// min-height: 40rem;
+		flex: 1;
+	}
+
+	&__footer {
+		// border-top: 1px solid $color-grey-dark-3;
+		width: 100%;
+		// margin: 0 -2rem;
+		padding: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&:hover {
+		transform: translateY(-10px);
+	}
+}

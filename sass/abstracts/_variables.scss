@@ -1,0 +1,64 @@
+:root {
+	--color-primary: #faf9f9;
+	--color-grey-dark-1: #121112;
+	--color-grey-dark-2: #777;
+	--color-button-chat: #3879f8;
+	--color-background-header-rgb: #100f15;
+	--color-post-background: #fff;
+	--color-white: #fff;
+}
+//COLORS
+$color-primary: #121112;
+$color-primary-light: #1d1d1d;
+
+$color-secondary-light: #fc3d39;
+$color-secondary-dark: #d42421;
+
+//tertiary (third in order after secondary)
+$color-tertiary-light: #3879f8;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #c9c9c9;
+
+$color-grey-dark-1: #9ba1a0;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-grey-dark-4: #121112;
+$color-grey-dark-5: #100f15;
+
+$color-blue-light:#2185d0;
+$color-blue-dark:#1678c2;
+
+$color-red-light:#db2828;
+$color-red-dark:#d01919;
+
+$color-white: #fff;
+$color-black: #000;
+
+//GRADIENT AND SHADOW
+// $gradient-primary: linear-gradient(30deg, var(--color-gradient), var(--color-gradient-2));
+$gradient-primary: linear-gradient(
+	90deg,
+	rgba(211, 14, 43, 1) 0%,
+	rgba(226, 102, 121, 1) 25%,
+	rgba(208, 241, 240, 1) 50%,
+	rgba(102, 222, 249, 1) 75%,
+	rgba(44, 192, 241, 1) 100%
+);
+$shadow: 0 15px 40px 5px rgba(132, 132, 133, 0.15);
+
+//FONT VARIABLES
+$default-font-size: 1.8rem;
+$font-heading: 'Chonburi', sans-serif;
+$font-body: 'Roboto', sans-serif;
+$font-nav: 'Roboto', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+//MEDIA VARIABLES - RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 25.625em;

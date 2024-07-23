@@ -1,0 +1,17 @@
+.login {
+	&__box {
+        @include absCenter;
+        background-color: $color-grey-dark-3;
+		position: absolute;
+        width: 45rem;
+		max-width: 50rem;
+		padding: 4rem;
+        border-radius: 1.5rem;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+}

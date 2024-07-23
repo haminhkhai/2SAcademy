@@ -1,0 +1,58 @@
+// Define variables for dark mode colors
+$background-color: #1e1e1e;
+$text-color: #ffffff;
+$toolbar-background: #333333;
+$toolbar-border: #444444;
+$picker-color: #ffffff;
+$picker-background: #333333;
+$stroke-color: #ffffff;
+$fill-color: #ffffff;
+$tooltip-background: #333333;
+$tooltip-border: #444444;
+
+.quill {
+    &.dark-mode {
+        .ql-editor {
+            background-color: $background-color;
+            color: $text-color;
+        }
+
+        .ql-toolbar {
+            background-color: $toolbar-background;
+            border-color: $toolbar-border;
+        }
+
+        .ql-picker {
+            color: $picker-color;
+        }
+
+        .ql-picker-options {
+            background-color: $picker-background;
+        }
+
+        .ql-stroke {
+            stroke: $stroke-color;
+        }
+
+        .ql-fill,
+        .ql-picker-item {
+            fill: $fill-color;
+        }
+
+        .ql-picker-label {
+            color: $picker-color;
+        }
+
+        .ql-tooltip {
+            background-color: $tooltip-background;
+            color: $text-color;
+            border-color: $tooltip-border;
+        }
+    }
+}
+
+.ql-editor {
+    & p img {
+        max-width: 100%;
+    }
+}

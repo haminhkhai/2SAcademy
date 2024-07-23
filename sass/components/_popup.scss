@@ -1,0 +1,108 @@
+.popup {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3000;
+	// display: flex;
+	// justify-content: center;
+	padding: 4rem 0;
+	background-color: rgba($color: $color-black, $alpha: 0.8);
+	overflow: auto;
+
+	@include respond(tab-port) {
+		padding: 1rem 0;
+	}
+
+	&--confirm {
+		background-color: rgba($color: $color-black, $alpha: 0.4);
+	}
+
+	@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba($color: $color-black, $alpha: 0.3);
+
+		&--confirm {
+			backdrop-filter: blur(1px);
+			background-color: rgba($color: $color-black, $alpha: 0.3);
+		}
+	}
+
+	&__content {
+		// @include absCenter;
+		margin: 5rem auto;
+		position: relative;
+		width: 75%;
+		background-color: $color-white;
+		box-shadow: 0 2rem 4rem rgba($color: $color-black, $alpha: 0.8);
+		border-radius: 5px;
+		display: table;
+		overflow: auto;
+
+		@include respond(tab-port) {
+			width: 85%;
+		}
+
+		@include respond(phone-large) {
+			width: 90%;
+		}
+
+		@include respond(phone-small) {
+			width: 95%;
+		}
+
+		&--small {
+			max-width: 50rem;
+		}
+
+		&--medium {
+			max-width: 80rem;
+		}
+
+		&--large {
+			max-width: 130rem;
+		}
+
+		&--confirm {
+			top: 37%;
+			max-width: 50rem;
+			padding: 3rem;
+			display: flex;
+			gap: 1.5rem;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			& button:not(:last-of-type) {
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	&__content-wrapper {
+		color: $color-primary;
+		padding: 3.5rem 2.5rem;
+		overflow: auto;
+
+		@include respond(phone-large) {
+			padding: 3.5rem 1.5rem;
+		}
+	}
+
+	&__left {
+	}
+
+	&__btn-close {
+		position: absolute;
+		top: 0.3rem;
+		right: 1.5rem;
+		font-size: 3.5rem;
+		cursor: pointer;
+
+		&:hover {
+			color: $color-grey-dark-2;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/utils';
+@import 'base/typo';
+@import 'base/animations';
+
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/nav';
+@import 'layout/cover';
+
+@import 'components/splide';
+@import 'components/posts';
+@import 'components/artist';
+@import 'components/features';
+@import 'components/buttons';
+@import 'components/about-textbox';
+@import 'components/gallery';
+@import 'components/blog';
+@import 'components/course';
+@import 'components/review';
+@import 'components/register';
+@import 'components/popup';
+@import 'components/form';
+@import 'components/search';
+@import 'components/sidebar';
+@import 'components/loading';
+@import 'components/icon';
+@import 'components/admin';
+@import 'components/progress';
+@import 'components/quill';
+
+@import 'pages/section';
+@import 'pages/course-detail';
+
+
+@import 'admin/login';

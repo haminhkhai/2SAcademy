@@ -1,0 +1,40 @@
+.about__text-box-container {
+	height: 100vh;
+}
+
+.about {
+	position: absolute;
+	top: 26%;
+	left: 7%;
+	text-align: left;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+
+	&__excerpt {
+		@include respond (phone) {
+			font-size: 2rem;
+			padding-right: .5rem;
+		}
+	}
+	
+	&__heading {
+		@include respond (phone) {
+			font-size: 5rem;
+		}
+		@include respond (phone-small) {
+			font-size: 4rem;
+		}
+	}
+
+	&__btn-group{
+		display: flex;
+		justify-content: flex-start;
+		gap: 2rem;
+
+		@include respond (phone) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+}

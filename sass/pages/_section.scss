@@ -1,0 +1,82 @@
+/////////////////////////////////CLIENT//////////////////////////////////////
+
+
+.section-about {
+	display: block;
+	background-image: url(https://res.cloudinary.com/de04qqilt/image/upload/v1720763553/Background/bg2_wih7e4.png);
+	
+	@include respond(big-desktop) {
+		background-image: url(https://res.cloudinary.com/de04qqilt/image/upload/v1720763553/Background/bg2_wih7e4.png);
+	}
+
+	@include respond(tab-land) {
+		background-image: url(https://res.cloudinary.com/de04qqilt/image/upload/w_1456,h_816/v1720763553/Background/bg2_wih7e4.png);
+	}
+
+	@include respond(phone-large) {
+		background-image: url(https://res.cloudinary.com/de04qqilt/image/upload/w_970,h_544/v1720763553/Background/bg2_wih7e4.png);
+	}
+
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 90%;
+	width: 100%;
+	height: 100vh;
+	margin-bottom: 4rem;
+}
+
+.section-courses {
+	background-color: $color-primary;
+	margin-bottom: 5rem;
+}
+
+.section-course-program {
+    background-color: $color-primary-light;
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+}
+
+.section-course-detail {
+    padding-top: 20rem;
+    margin-bottom: 5rem;
+}
+
+.section-artist {
+	background-color: $color-primary-light;
+	margin-bottom: 5rem;
+}
+
+.section-gallery {
+	margin-bottom: 5rem;
+}
+
+.section-blog {
+	margin-bottom: 5rem;
+}
+
+.section-review {
+    padding: 2rem 0 5rem 5rem;
+    margin-bottom: 5rem;
+
+	@include respond (phone) {
+		padding-left: 2rem;
+	}
+}
+
+/////////////////////////////////////////ADMIN///////////////////////////////
+
+.section-login {
+	position: relative;
+	display: block;
+	background-image: url(../img/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 100vh;
+}
+
+.section-admin {
+	padding-top: 20rem;
+}

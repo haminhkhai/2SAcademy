@@ -1,0 +1,9 @@
+.progress {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%; /* Full width of the container */
+	background-color: $color-blue-light; /* Background color of the container */
+	height: 4px;
+	z-index: 10000;
+}

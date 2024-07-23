@@ -1,0 +1,61 @@
+.post-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.post-card {
+    background-color: var(--color-post-background);
+    border-radius: 2rem;
+    min-height: 25rem;
+    margin: 0;
+    
+    &--big {
+        flex-basis: 30%;
+    }
+
+    &--small {
+        flex-basis: 20%;
+    }
+
+    &__thumb {
+        width: 100%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+
+    &__content {
+        padding: 2rem;
+        overflow: hidden; //clearing float child
+    }
+
+    &__heading {
+        font-family: $font-heading;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+    
+    &__excerpt {
+        font-size: 1.6rem;
+        margin: 1.5rem 0;
+        color: $color-grey-dark-2;
+        font-family: $font-body;
+    }
+
+    &__footer {
+        align-self: flex-end;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        & a {
+            font-size: 1.7rem;
+        }
+    }  
+
+    &__logo-about {
+        width: 4rem;
+    }
+}

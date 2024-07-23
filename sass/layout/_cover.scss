@@ -1,0 +1,47 @@
+.cover {
+    position: relative;
+    height: 50rem;
+    width: 100%;
+    background-image: url(/img/background/gallery-cover.jpg);
+    background-size: cover;
+    background-position: 50% 35%;
+
+    &__heading-box {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__heading {
+        font-size: 7rem;
+        line-height: 1;
+    }
+
+    &__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 7rem;
+		gap: 1rem;
+	}
+
+	&__info-logo {
+		width: 10rem;
+	}
+
+	&__info-heading {
+		background: $gradient-primary;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 3rem;
+	}
+}
+
+
+
